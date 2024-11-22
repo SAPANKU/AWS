@@ -1,4 +1,4 @@
-EBS volume monunt & unmount
+EBS volume monunt & unmount on ubuntu
 
     1  sudo apt update
     2  lsblk
