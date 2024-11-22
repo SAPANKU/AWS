@@ -18,3 +18,14 @@ EBS volume monunt & unmount on ubuntu
    19  ls
    21  lsblk
    22  df -h
+
+
+Assignment 3
+
+    1  sudo apt update
+    2  sudo apt install nfs-common -y
+    3  sudo mkdir efs
+    4  ls
+    5  sudo mount -t nfs4 -o nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,retrans=2,noresvport fs-0031750035a1515bb.efs.us-east-1.amazonaws.com:/ efs
+    6  df -h
+    7  sudo umount -t nfs4 -o nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,retrans=2,noresvport fs-0031750035a1515bb.efs.us-east-1.amazonaws.com:/ efs
