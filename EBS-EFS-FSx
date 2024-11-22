@@ -1,0 +1,20 @@
+EBS volume monunt & unmount
+
+    1  sudo apt update
+    2  lsblk
+     4  sudo file -s /dev/xvda
+    5  sudo file -s /dev/xvdh
+    6  sudo mkfs -t ext4 /dev/xvdh
+    7  lsblk
+    8  sudo file -s /dev/xvdh
+    9  sudo mkdir ebsvolume
+   10  ls
+   11  sudo mount /dev/xvdh ebsvolume/
+   12  ls
+   13  lsblk
+   14  df -h
+   16  sudo umount /dev/xvdh 
+   17  ls
+   19  ls
+   21  lsblk
+   22  df -h
